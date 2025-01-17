@@ -9,18 +9,14 @@ import java.util.List;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 public class ResponseCarritoDeliveryDto {
 
     private Integer idCarrito;
-    private BigDecimal total;
-    private LocalDate fecha;
-    private List<ResponseDetalleDeliveryDto> detalles;
+    private String mensaje;
+    private String status;
 
-    public ResponseCarritoDeliveryDto(Integer idCarrito, BigDecimal total, LocalDate fecha) {
+    public ResponseCarritoDeliveryDto(Integer idCarrito) {
         this.idCarrito = idCarrito;
-        this.total = total;
-        this.fecha = fecha;
     }
 
 }

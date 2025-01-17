@@ -11,7 +11,6 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class PedidoDelivery extends Pedido {
 
     @Column(name = "id_cliente")

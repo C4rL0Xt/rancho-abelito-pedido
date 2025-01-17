@@ -1,6 +1,6 @@
 package com.elranchoabelito.pedidos.mappers;
 
-import com.elranchoabelito.pedidos.models.dtos.CreateDetalleDeliveryDto;
+import com.elranchoabelito.pedidos.models.dtos.AddDetalleDeliveryDTO;
 import com.elranchoabelito.pedidos.models.dtos.DetalleDeliveryDTO;
 import com.elranchoabelito.pedidos.models.entities.CarritoCompra;
 import com.elranchoabelito.pedidos.models.entities.DetalleCarritoCompra;
@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 public class DetalleMapper {
 
 
-    public static DetalleCarritoCompra toDetalleCarritoCompra(CreateDetalleDeliveryDto detalleDeliveryDto, CarritoCompra carritoCompra, EstadoDetalleCarrito estado, BigDecimal precio) {
+    public static DetalleCarritoCompra toDetalleCarritoCompra(AddDetalleDeliveryDTO detalleDeliveryDto, CarritoCompra carritoCompra, EstadoDetalleCarrito estado, BigDecimal precio) {
         DetalleCarritoCompra detalleCarritoCompra = new DetalleCarritoCompra();
         DetalleCarritoCompraId detalleCarritoCompraId = new DetalleCarritoCompraId();
 
