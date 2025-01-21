@@ -18,4 +18,6 @@ public interface IDetalleCarritoService {
 
     BigDecimal sumTotalDetalles(List<DetalleDeliveryDTO> detalles);
 
+
+
 }

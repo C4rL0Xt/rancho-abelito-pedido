@@ -18,5 +18,4 @@ public class DetalleDeliveryDTO {
     private BigDecimal precioProducto;
     private Integer cantidad;
 
-
 }
